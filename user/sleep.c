@@ -15,8 +15,8 @@ main(int argc, char *argv[])
 
   n = atoi(argv[1]);
 
-  // 1 second is 10 clock ticks
-  if(sleep(n * 10) < 0)
+  // 1 clock tick is 0.1 second
+  if(sleep(n) < 0)
     fprintf(2, "sleep failed\n");
 
   exit(0);
